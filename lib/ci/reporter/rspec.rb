@@ -98,7 +98,7 @@ module CI
       attr_accessor :formatter
       def initialize(*args)
         @formatter ||= RSpecFormatters::ProgressFormatter.new(*args)
-        @report_manager = ReportManager.new("spec")
+        @report_manager = ReportManager.new("test")
         @suite = nil
       end
 
